@@ -1,0 +1,134 @@
+:root {
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+
+    box-sizing: border-box;
+    font-family: 'Outer', sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+
+main {
+    min-width: 270px;
+    width: 20rem;
+    background-color: var(--very-dark-blue-card);
+    color: #fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    /* padding: 1.25rem; */
+    margin-top: 5vh;
+    border-radius: 1rem;
+
+}
+
+main>img {
+    width: 90%;
+    align-self: center;
+    border-radius: .625rem;
+    margin-top: 1rem;
+}
+
+article {
+    padding: 1rem;
+}
+
+article>h1 {
+    font-size: 1.125rem;
+    padding: 0.75rem 0;
+    font-weight: 600;
+
+}
+
+article>p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--soft-blue);
+    width: inherit;
+}
+
+
+.eth {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+
+.eth__price {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.eth__price>h2 {
+    font-size: 1rem;
+    color: var(--cyan);
+}
+
+
+.eth__price>img {
+    margin-right: 0.5rem;
+}
+
+.eth__days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.eth__days>span {
+    color: var(--soft-blue);
+    font-size: 0.875rem;
+}
+
+.eth__days>img {
+    margin-right: 0.5rem;
+}
+
+
+.creator {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem auto 1rem 0;
+}
+
+hr {
+    color: var(--soft-blue);
+}
+
+.creator>img {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.creator>span,
+p {
+    font-size: 0.875rem;
+}
+
+.creator>p>span {
+    color: var(--soft-blue);
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin-top: 15vh;
+    }
+}
