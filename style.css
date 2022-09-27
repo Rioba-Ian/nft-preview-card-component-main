@@ -17,6 +17,7 @@ body {
     font-family: 'Outer', sans-serif;
     font-size: 16px;
     display: flex;
+    height: 100vh;
 }
 
 main {
@@ -24,22 +25,52 @@ main {
     width: 20rem;
     background-color: var(--very-dark-blue-card);
     color: #fff;
-    height: auto;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-inline: auto;
     /* padding: 1.25rem; */
-    margin-top: 5vh;
+    margin-top: 10vh;
     border-radius: 1rem;
 
 }
 
-main>img {
+.img-container {
     width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 19.333rem;
+    width: 1rem;
+    background-color: hsla(178, 100%, 50%, 0.459);
+    opacity: 0;
+}
+
+.overlay-img {}
+
+.img-container-equilibrium {
+    width: 100%;
     align-self: center;
     border-radius: .625rem;
     margin-top: 1rem;
+    cursor: pointer;
 }
+
+/* .img-container:hover .overlay {
+    opacity: 0.5;
+
+} */
+
 
 article {
     padding: 1rem;
@@ -116,6 +147,8 @@ hr {
 .creator>img {
     width: 2.5rem;
     margin-right: 0.5rem;
+    border-radius: 50%;
+    border: #fff;
 }
 
 .creator>span,
