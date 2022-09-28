@@ -46,12 +46,12 @@ main {
 
 .overlay {
     position: absolute;
-    top: 15%;
+    top: 30%;
     bottom: 0;
     left: 50%;
     right: 50%;
     height: 19.333rem;
-    width: 1rem;
+    /* width: 1rem; */
     background-color: hsla(178, 100%, 50%, 0.459);
     opacity: 0;
 }
@@ -66,10 +66,14 @@ main {
     cursor: pointer;
 }
 
-/* .img-container:hover .overlay {
-    opacity: 0.5;
+.img-container-equilibrium:hover {
+    opacity: 0.2;
+}
 
-} */
+.img-container:hover .overlay {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 
 article {
